@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function () {
-    gulp.src(['./app/scss/master.sass'])
+    gulp.src(['./app/sass/master.sass'])
         .pipe(sass({includePaths: ['sass']}))
         .pipe(autoprefixer('last 2 version'))
         .pipe(gulp.dest('./app/css'))

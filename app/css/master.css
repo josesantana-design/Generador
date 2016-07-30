@@ -41,15 +41,45 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* Colors */
-/* Font */
+/* Colores */
+/* Fuentes */
+/* Espacios */
 body {
-  background: #22272a;
+  background: #fff;
   color: #ced9e0;
-  font-family: "Open Sans", "Arial", sans-serif; }
+  font-family: "Lato", sans-serif; }
 
-a {
-  color: #5A5F62; }
+::-webkit-input-placeholder {
+  color: #fff; }
 
-a:hover {
-  color: #ced9e0; }
+:-moz-placeholder {
+  color: #fff; }
+
+.navbar {
+  background-color: #f83745;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .navbar_logo {
+    width: 100%;
+    background-color: #f83745;
+    padding: 1em 40px; }
+    .navbar_logo h3 {
+      font-weight: 600; }
+  .navbar_toggle {
+    position: absolute;
+    top: 1em;
+    right: 40px; }
+  .navbar_search {
+    width: 100%;
+    background-color: #ff424f;
+    padding: 1em 40px; }
+    .navbar_search input {
+      width: 100%;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #fff; }
