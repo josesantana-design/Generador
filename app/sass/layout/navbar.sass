@@ -10,8 +10,13 @@
     padding: 1em $space
     h3
       font-weight: 600
+      display: flex
+      align-items: center
+      .icon-ticket
+        margin-right: 10px
 
   &_toggle
+    cursor: pointer
     position: absolute
     top: 1em
     right: $space
@@ -20,9 +25,13 @@
     width: 100%
     background-color: $color-two
     padding: 1em $space
+    .icon-search
+      position: absolute
+      top: 65px
     input
       width: 100%
       background: transparent
       border: none
       outline: none
       color: $color-white
+      padding-left: $space

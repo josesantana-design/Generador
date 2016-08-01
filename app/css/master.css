@@ -1,3 +1,6 @@
+/* Colores */
+/* Fuentes */
+/* Espacios */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -41,9 +44,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* Colores */
-/* Fuentes */
-/* Espacios */
 body {
   background: #fff;
   color: #ced9e0;
@@ -68,8 +68,17 @@ body {
     background-color: #f83745;
     padding: 1em 40px; }
     .navbar_logo h3 {
-      font-weight: 600; }
+      font-weight: 600;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .navbar_logo h3 .icon-ticket {
+        margin-right: 10px; }
   .navbar_toggle {
+    cursor: pointer;
     position: absolute;
     top: 1em;
     right: 40px; }
@@ -77,9 +86,29 @@ body {
     width: 100%;
     background-color: #ff424f;
     padding: 1em 40px; }
+    .navbar_search .icon-search {
+      position: absolute;
+      top: 65px; }
     .navbar_search input {
       width: 100%;
       background: transparent;
       border: none;
       outline: none;
-      color: #fff; }
+      color: #fff;
+      padding-left: 40px; }
+
+.sidebar {
+  width: 240px;
+  height: 2000px;
+  background-color: #191c1f;
+  position: absolute; }
+  .sidebar .sidebar_item {
+    list-style: none; }
+    .sidebar .sidebar_item .sidebar_link {
+      display: block;
+      background-color: #222b31;
+      padding: 1em 40px;
+      color: #fff;
+      text-decoration: none; }
+      .sidebar .sidebar_item .sidebar_link:hover {
+        color: #f83745; }
