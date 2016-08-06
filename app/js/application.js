@@ -2,10 +2,8 @@
 JS : Aplication SCRIPTS
 ===================================================*/
 
- var application = angular.module('application', []);
-
-application
+angular
+  .module('application', [])
   .controller('myCtrl', function($scope) {
-    $scope.firstName = "John";
-    $scope.lastName = "Doe";
+
 });
