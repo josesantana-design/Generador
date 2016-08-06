@@ -1,9 +1,9 @@
 {
-  "name": "Generator Personal",
+  "name": "GeneratorPersonal",
   "version": "0.0.1",
-  "description": "Generador Personal",
+  "description": "GeneradorPersonal",
   "licenses": "Jose Santana",
-  "repository": "your repository url goes here",
+  "repository": "",
   "devDependencies": {
     "browser-sync": "~1.9.1",
     "gulp": "~3.9.0",
