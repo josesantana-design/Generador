@@ -3,13 +3,22 @@
   height: 2000px
   background-color: $color-four
   position: absolute
+  left: -240px
+  transition: all .2s
   .sidebar_item
     list-style: none
     .sidebar_link
+      font-size: 14px
       display: block
-      background-color: $color-five
       padding: 1em $space
       color: #fff
       text-decoration: none
       &:hover
+        background-color: $color-five
         color: $color-one
+
+input[type=checkbox]
+  display: none
+
+input[type=checkbox]:checked ~ .sidebar
+  left: 0

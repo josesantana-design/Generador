@@ -81,7 +81,8 @@ body {
     cursor: pointer;
     position: absolute;
     top: 1em;
-    right: 40px; }
+    right: 40px;
+    color: #fff; }
   .navbar_search {
     width: 100%;
     background-color: #ff424f;
@@ -101,14 +102,56 @@ body {
   width: 240px;
   height: 2000px;
   background-color: #191c1f;
-  position: absolute; }
+  position: absolute;
+  left: -240px;
+  -webkit-transition: all .2s;
+          transition: all .2s; }
   .sidebar .sidebar_item {
     list-style: none; }
     .sidebar .sidebar_item .sidebar_link {
+      font-size: 14px;
       display: block;
-      background-color: #222b31;
       padding: 1em 40px;
       color: #fff;
       text-decoration: none; }
       .sidebar .sidebar_item .sidebar_link:hover {
+        background-color: #222b31;
         color: #f83745; }
+
+input[type=checkbox] {
+  display: none; }
+
+input[type=checkbox]:checked ~ .sidebar {
+  left: 0; }
+
+.movies_title {
+  font-size: 26px;
+  color: #222b31;
+  margin: 40px; }
+
+.movies_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .movies_container .movie .head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10px;
+    color: #fff; }
+    .movies_container .movie .head .calidad {
+      background-color: #1aa9f3;
+      padding: .3em;
+      margin-right: 5px; }
+    .movies_container .movie .head .idioma {
+      background-color: #ffd85a;
+      padding: .3em; }
+  .movies_container .movie .titulo {
+    margin-top: 5px;
+    color: #222b31;
+    font-size: 18px; }
+  .movies_container .movie .genero {
+    color: #1aa9f3; }

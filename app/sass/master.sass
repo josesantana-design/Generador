@@ -4,3 +4,30 @@
 @import "layout/navbar"
 @import "layout/sidebar"
 @import "pages/page-landing"
+
+.movies
+  &_title
+    font-size: 26px
+    color: $color-five
+    margin: $space
+  &_container
+    display: flex
+    justify-content: center
+    .movie
+      .head
+        display: flex
+        margin-bottom: 10px
+        color: $color-white
+        .calidad
+          background-color: $color-three
+          padding: .3em
+          margin-right: 5px
+        .idioma
+          background-color: $color-six
+          padding: .3em
+      .titulo
+        margin-top: 5px
+        color: $color-five
+        font-size: 18px
+      .genero
+        color: $color-three
