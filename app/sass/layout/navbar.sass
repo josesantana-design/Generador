@@ -1,10 +1,14 @@
+//=============================
+          Navbar
+//=============================
+
 .navbar
   background-color: $color-one
   color: $color-white
   display: flex
   flex-wrap: wrap
 
-  &_logo
+  .navbar__logo
     width: 100%
     background-color: $color-one
     padding: 1em $space
@@ -15,14 +19,14 @@
       .icon-ticket
         margin-right: 10px
 
-  &_toggle
+  .navbar__toggle
     cursor: pointer
     position: absolute
     top: 1em
     right: $space
     color: $color-white
 
-  &_search
+  .navbar__search
     width: 100%
     background-color: $color-two
     padding: 1em $space

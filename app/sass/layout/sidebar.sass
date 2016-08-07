@@ -1,3 +1,7 @@
+//=============================
+          Sidebar
+//=============================
+
 .sidebar
   width: 240px
   height: 2000px
@@ -5,9 +9,12 @@
   position: absolute
   left: -240px
   transition: all .2s
-  .sidebar_item
+  padding-top: $space
+
+  .sidebar__item
     list-style: none
-    .sidebar_link
+
+    .sidebar__link
       font-size: 14px
       display: block
       padding: 1em $space
@@ -16,9 +23,10 @@
       &:hover
         background-color: $color-five
         color: $color-one
+      span
+        position: absolute
+        right: $space
+        font-size: 18px
 
-input[type=checkbox]
-  display: none
-
-input[type=checkbox]:checked ~ .sidebar
+.open
   left: 0
