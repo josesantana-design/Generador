@@ -11,9 +11,9 @@
 
   .movies__wrapper
     display: flex
-    justify-content: center
+    justify-content: space-around
     flex-wrap: wrap
-    margin-left: 15px
+    margin-left: 30px
 
     .movies__movie
       padding-right: 15px
@@ -26,7 +26,7 @@
         .movie__quality
           background-color: $color-three
           padding: .3em
-          margin-right: 5px
+          margin-right: 10px
         .movie__language
           background-color: $color-six
           padding: .3em
@@ -40,3 +40,8 @@
 
       .movie__gender
         color: $color-three
+
+// Pantallas 1024px
+@media (min-width: 1024px)
+  .movies
+    margin-left: 240px

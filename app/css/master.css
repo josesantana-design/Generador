@@ -1,6 +1,7 @@
 /* Colores */
 /* Fuentes */
 /* Espacios */
+/* Media Querys */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -49,6 +50,21 @@ body {
   color: #ced9e0;
   font-family: "Lato", sans-serif; }
 
+@media (min-width: 480px) {
+  body {
+    background-color: #f0c47b; } }
+
+@media (min-width: 768px) {
+  body {
+    background-color: #f77e82; } }
+
+@media (min-width: 1024px) {
+  body {
+    background-color: #68acf5; } }
+
+a {
+  text-decoration: none; }
+
 ::-webkit-input-placeholder {
   color: #fff; }
 
@@ -56,7 +72,7 @@ body {
   color: #fff; }
 
 .navbar {
-  background-color: #f83745;
+  background-color: #ff424f;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,12 +113,47 @@ body {
       outline: none;
       color: #fff;
       padding-left: 40px; }
-
-input[type=checkbox] {
-  display: none; }
-
-input[type=checkbox]:checked ~ .sidebar {
-  left: 0; }
+  .navbar .navbar__redes {
+    box-sizing: border-box;
+    width: 60.3%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 40px;
+    display: none; }
+    .navbar .navbar__redes a {
+      color: #fff;
+      padding-left: 15px; }
+  @media (min-width: 1024px) {
+    .navbar .navbar__toggle,
+    .navbar .icon-bars {
+      display: none; }
+    .navbar .navbar__logo {
+      box-sizing: border-box;
+      width: 16.9%;
+      background-color: #f83745;
+      padding: 1em 0px 1em 40px; }
+    .navbar .navbar__search {
+      width: 17%;
+      background-color: #ff424f;
+      padding: 1em 40px; }
+      .navbar .navbar__search .icon-search {
+        position: absolute;
+        top: 16px; }
+      .navbar .navbar__search input {
+        width: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #fff;
+        padding-left: 40px; }
+    .navbar .navbar__redes {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 .sidebar {
   width: 240px;
@@ -132,6 +183,10 @@ input[type=checkbox]:checked ~ .sidebar {
 .open {
   left: 0; }
 
+@media (min-width: 1024px) {
+  .sidebar {
+    left: 0; } }
+
 .movies .movies__title {
   font-size: 26px;
   color: #222b31;
@@ -141,12 +196,11 @@ input[type=checkbox]:checked ~ .sidebar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: 15px; }
+  margin-left: 30px; }
   .movies .movies__wrapper .movies__movie {
     padding-right: 15px; }
     .movies .movies__wrapper .movies__movie .movies__movie__head {
@@ -159,7 +213,7 @@ input[type=checkbox]:checked ~ .sidebar {
       .movies .movies__wrapper .movies__movie .movies__movie__head .movie__quality {
         background-color: #1aa9f3;
         padding: .3em;
-        margin-right: 5px; }
+        margin-right: 10px; }
       .movies .movies__wrapper .movies__movie .movies__movie__head .movie__language {
         background-color: #ffd85a;
         padding: .3em; }
@@ -169,3 +223,7 @@ input[type=checkbox]:checked ~ .sidebar {
       font-size: 18px; }
     .movies .movies__wrapper .movies__movie .movie__gender {
       color: #1aa9f3; }
+
+@media (min-width: 1024px) {
+  .movies {
+    margin-left: 240px; } }
